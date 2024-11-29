@@ -25,6 +25,51 @@ entries:
           name: traefik
     apiVersion: v2
     appVersion: 5.2.1
+    created: "2024-11-29T20:48:54.143958244Z"
+    description: Multi-user Jupyter installation
+    digest: b94355238076db16fde3c382030271697967d81a1b705fc76390038935bb7765
+    home: https://z2jh.jupyter.org
+    icon: https://hub.jupyter.org/helm-chart/images/hublogo.svg
+    keywords:
+    - jupyter
+    - jupyterhub
+    - z2jh
+    kubeVersion: '>=1.28.0-0'
+    maintainers:
+    - email: erik@sundellopensource.se
+      name: Erik Sundell
+    - name: Simon Li
+      url: https://github.com/manics/
+    name: jupyterhub
+    sources:
+    - https://github.com/jupyterhub/zero-to-jupyterhub-k8s
+    urls:
+    - https://tik-nfl.github.io/jupyterhub-helm-chart/jupyterhub-4.0.4-0.dev.git.6897.h3a1b5767.tgz
+    version: 4.0.4-0.dev.git.6897.h3a1b5767
+  - annotations:
+      artifacthub.io/images: |
+        - image: ghcr.io/tik-nfl/z2jh-hub:4.0.4-0.dev
+          name: z2jh-hub
+        - image: ghcr.io/tik-nfl/z2jh-image-awaiter:4.0.4-0.dev
+          name: z2jh-image-awaiter
+        - image: ghcr.io/tik-nfl/z2jh-network-tools:4.0.4-0.dev
+          name: z2jh-network-tools
+        - image: ghcr.io/tik-nfl/z2jh-secret-sync:4.0.4-0.dev
+          name: z2jh-secret-sync
+        - image: ghcr.io/tik-nfl/z2jh-singleuser-sample:4.0.4-0.dev
+          name: z2jh-singleuser-sample
+        - image: quay.io/jupyterhub/configurable-http-proxy:4.6.2
+          name: configurable-http-proxy
+        - image: registry.k8s.io/kube-scheduler:v1.30.7
+          name: kube-scheduler
+        - image: registry.k8s.io/pause:3.10
+          name: pause
+        - image: registry.k8s.io/pause:3.10
+          name: pause
+        - image: traefik:v3.2.1
+          name: traefik
+    apiVersion: v2
+    appVersion: 5.2.1
     created: "2024-11-29T20:34:57.900938617Z"
     description: Multi-user Jupyter installation
     digest: 23e38405d3b2253d07557548cead0a9731295deb1cc5289f6e7b4fe1c4b9a9b3
@@ -91,4 +136,4 @@ entries:
     urls:
     - https://tik-nfl.github.io/jupyterhub-helm-chart/jupyterhub-4.0.4-0.dev.tgz
     version: 4.0.4-0.dev
-generated: "2024-11-29T20:34:57.898131992Z"
+generated: "2024-11-29T20:48:54.140390733Z"
